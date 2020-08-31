@@ -4,8 +4,6 @@ exports.getExistingBoard = async (req, res) => {
 
   const rawdata = fs.readFileSync('boards.json');
   const boards = JSON.parse(rawdata);
-  fs.writeFileSync('boards.json', JSON.stringify(boards));
-
   const board = boards[id];
 
   res.status(200).send(board);
