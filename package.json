@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "migrate": "db-migrate up",
+    "seed": "node seed-words.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "csv-parser": "^2.3.3",
+    "db-migrate": "^0.11.11",
+    "db-migrate-pg": "^1.2.2",
+    "express": "^4.17.1",
+    "knex": "^0.20.7",
+    "nodemon": "^2.0.4",
+    "pg": "^7.17.1",
+    "pg-promise": "^10.3.5",
+    "ramda": "^0.26.1",
+    "random-words": "^1.1.0"
+  }
+}
