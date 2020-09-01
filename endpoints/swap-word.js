@@ -10,7 +10,7 @@ exports.swapWord = async (req, res) => {
   const newWord = getRandomWords(1)[0];
   boards[id].words[index] = newWord;
 
-
+  fs.writeFileSync('boards.json', JSON.stringify(boards));
 
   res.status(200).send({
     word: newWord,
